@@ -1,0 +1,1069 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+<title>Check-up normativo gratuito · NextHSE</title>
+<meta name="description" content="Mandaci l’elenco anonimo dei tuoi clienti. In una call di 20 minuti ti mostriamo chi è impattato dagli ultimi aggiornamenti normativi, cosa verificare e cosa comunicare.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#0A1F33">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="NextHSE">
+<meta property="og:title" content="Check-up normativo gratuito · NextHSE">
+<meta property="og:description" content="È uscito un interpello. Quali dei tuoi clienti sono coinvolti? Excel anonimo, report in una call di 20 minuti.">
+<meta property="og:url" content="https://advfmosca.github.io/nexthse-checkup/">
+<meta property="og:image" content="https://advfmosca.github.io/nexthse-checkup/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Plus Jakarta Sans (Google Fonts, licenza OFL) servito in locale: un solo file variabile 400–800,
+   nessuna richiesta a server Google, niente cambio di font a metà caricamento grazie al fallback calibrato. */
+@font-face{
+  font-family:"Plus Jakarta Sans";
+  src:url("fonts/plus-jakarta-sans-latin.woff2") format("woff2");
+  font-weight:200 800;font-style:normal;font-display:swap;
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:"Jakarta Fallback";
+  src:local("Arial"),local("Helvetica Neue"),local("Helvetica"),local("Roboto");
+  size-adjust:105.35%;ascent-override:98.53%;descent-override:21.07%;line-gap-override:0%;
+}
+:root{
+  --navy-950:#0A1F33;--navy-900:#0D243A;--navy-800:#14304A;--navy-700:#1D3D5C;
+  --ink-900:#0F2742;--ink-700:#334155;--ink-500:#64748B;--ink-400:#7A889C;--ink-300:#CBD5E1;
+  --line:#E2E8F0;--surface:#F8FAFC;--white:#FFFFFF;
+  --orange:#F97316;--orange-600:#EA580C;--orange-700:#C2410C;--orange-300:#FDBA74;--orange-soft:#FFF7ED;--orange-100:#FFEDD5;
+  --green:#16A34A;--green-700:#15803D;--green-soft:#F0FDF4;
+  --rose:#F43F5E;--rose-600:#E11D48;--rose-700:#BE123C;--rose-soft:#FFF1F2;
+  --r-btn:12px;--r-card:16px;--r-tile:12px;
+  --ease-out:cubic-bezier(0.23,1,0.32,1);
+  --ease-in-out:cubic-bezier(0.77,0,0.175,1);
+  --shadow-card:0 1px 2px rgb(15 39 66 / .05),0 18px 40px -20px rgb(15 39 66 / .22);
+  --focus:#EA580C;
+  --font:"Plus Jakarta Sans","Jakarta Fallback",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;-webkit-tap-highlight-color:transparent;scroll-padding-top:16px}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--white);color:var(--ink-700);font-family:var(--font);font-size:1rem;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-wrap:break-word;text-rendering:optimizeLegibility}
+@media (min-width:768px){body{font-size:1.0625rem}}
+h1,h2,h3{color:var(--ink-900);margin:0;font-weight:700;text-wrap:balance;letter-spacing:-0.025em}
+p{margin:0;text-wrap:pretty}
+ul,ol{margin:0;padding:0;list-style:none}
+img,svg{display:block}
+a{color:inherit}
+a,button,summary,label{touch-action:manipulation}
+button,input,select,textarea{font:inherit;color:inherit}
+::selection{background:var(--orange-100);color:var(--ink-900)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}
+.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-inline:max(20px,env(safe-area-inset-left)) max(20px,env(safe-area-inset-right))}
+.ic{width:20px;height:20px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ic-lg{width:24px;height:24px;stroke-width:1.75}
+.section{padding-block:clamp(3.5rem,2.4rem + 4.2vw,6.5rem)}
+.h2{font-size:clamp(1.625rem,1.1rem + 1.9vw,2.5rem);line-height:1.15}
+.h3{font-size:1.1875rem;line-height:1.3;letter-spacing:-0.015em}
+
+/* ---------- Bottoni ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:52px;padding:.8125rem 1rem;border-radius:var(--r-btn);border:1.5px solid transparent;font-weight:700;font-size:1.1875rem;line-height:1.3;text-align:center;text-decoration:none;cursor:pointer;
+  touch-action:manipulation;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none;
+  transition:transform 160ms var(--ease-out),background-color 200ms ease,border-color 200ms ease,box-shadow 200ms ease,color 200ms ease}
+.btn:active{transform:scale(.97)}
+@media (min-width:480px){.btn{white-space:nowrap;padding-inline:1.375rem}}
+.btn .ic{transition:transform 200ms var(--ease-out)}
+/* Arancio di riposo #EA580C (il loro hover) e hover #C2410C: testo bianco a 3,6:1 e 5,2:1, su #F97316 sarebbe 2,8:1 */
+.btn-primary{background:var(--orange-600);color:#fff;box-shadow:0 10px 24px -10px rgb(234 88 12 / .55)}
+.btn-secondary{background:#fff;color:var(--ink-900);border-color:var(--ink-300)}
+.btn-small{min-height:44px;padding:.5rem 1rem;font-size:.9375rem}
+.btn-block{width:100%}
+@media (hover:hover) and (pointer:fine){
+  .btn-primary:hover{background:var(--orange-700);box-shadow:0 12px 28px -10px rgb(194 65 12 / .6)}
+  .btn-primary:hover .ic-arrow{transform:translateX(3px)}
+  .btn-secondary:hover{border-color:var(--ink-500);background:var(--surface)}
+}
+
+/* ---------- Barra in alto e header ---------- */
+.topbar{background:var(--navy-950);color:rgb(255 255 255 / .78);font-size:.8125rem;line-height:1.4;text-align:center;padding:.5rem max(16px,env(safe-area-inset-left)) .5rem max(16px,env(safe-area-inset-right))}
+.topbar strong{color:#fff;font-weight:700}
+.topbar .sep{color:var(--orange);font-weight:700}
+.site-header{background:#fff;border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:64px}
+.logo{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;min-height:44px;border-radius:8px}
+.logo svg{width:28px;height:28px}
+.wordmark{font-size:1.25rem;line-height:1;letter-spacing:-0.03em;font-weight:700;color:var(--ink-900)}
+.wordmark b{font-weight:800;color:var(--orange)}
+.header-cta{display:none}
+@media (min-width:768px){.header-inner{min-height:72px}.header-cta{display:inline-flex}}
+
+/* ---------- Hero ---------- */
+.hero{background:linear-gradient(180deg,var(--surface) 0%,#fff 78%);padding-block:1.375rem 3.5rem;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:2.5rem;align-items:center}
+@media (min-width:1024px){.hero{padding-block:4.5rem 5.5rem}.hero-grid{grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:3.5rem}}
+.pill{display:inline-flex;align-items:center;gap:.5rem;font-size:.8125rem;font-weight:700;color:var(--green-700);background:var(--green-soft);border:1px solid rgb(22 163 74 / .18);border-radius:999px;padding:.3125rem .75rem;line-height:1.3}
+.pill-dot{width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0}
+.hero h1{margin-top:.875rem;font-size:clamp(2rem,1.2rem + 3.2vw,3.125rem);line-height:1.08;font-weight:800;letter-spacing:-0.03em}
+.hero h1 .line{display:block}
+.hero h1 .accent{color:var(--orange-600)}
+.lede{margin-top:1rem;font-size:1.0625rem;line-height:1.6;color:var(--ink-700);max-width:36rem}
+@media (min-width:768px){.lede{font-size:1.1875rem;margin-top:1.25rem}}
+.cta-row{display:flex;flex-direction:column;gap:.75rem;margin-top:1.375rem}
+@media (min-width:480px){.cta-row{flex-direction:row;flex-wrap:wrap}}
+@media (min-width:768px){.cta-row{margin-top:1.75rem}}
+.cta-row .btn{width:100%}
+@media (max-width:479px){.cta-row .ic-arrow{display:none}}
+@media (min-width:480px){.cta-row .btn{width:auto}}
+.badges{display:flex;flex-wrap:wrap;gap:.5rem 1.125rem;margin-top:1.125rem;font-size:.875rem;font-weight:600;color:var(--ink-700)}
+.badges li{display:inline-flex;align-items:center;gap:.4375rem}
+.badges .ic{width:17px;height:17px;color:var(--orange-600)}
+
+/* Mockup dashboard (HTML/CSS, come sul sito NextHSE) */
+.hero-visual{position:relative;isolation:isolate;width:100%;max-width:540px;margin-inline:auto}
+.hero-visual::before{content:"";position:absolute;inset:-80px -64px;z-index:-1;pointer-events:none;
+  background:radial-gradient(closest-side at 28% 26%,rgb(249 115 22 / .18),transparent),radial-gradient(closest-side at 78% 80%,rgb(22 163 74 / .12),transparent),radial-gradient(closest-side at 52% 50%,rgb(13 36 58 / .08),transparent)}
+.dash{border-radius:var(--r-card);padding:.75rem;color:#fff;background:linear-gradient(140deg,#0C2236 0%,#102A43 100%);
+  box-shadow:inset 0 0 0 1px rgb(255 255 255 / .08),0 30px 60px -28px rgb(10 31 51 / .55),0 14px 28px -18px rgb(10 31 51 / .35)}
+@media (min-width:400px){.dash{padding:1rem}}
+@media (min-width:768px){.dash{padding:1.25rem}}
+.dash-head{display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding-bottom:.75rem;border-bottom:1px solid rgb(255 255 255 / .1)}
+.dash-brand{display:inline-flex;align-items:center;gap:.4375rem;min-width:0}
+.dash-brand svg{width:20px;height:20px}
+.dash-brand .wordmark{font-size:1rem;color:#fff}
+.dash-sub{font-size:.75rem;color:rgb(255 255 255 / .6);white-space:nowrap}
+.live{display:inline-flex;align-items:center;gap:.4375rem;font-size:.75rem;color:rgb(255 255 255 / .72);white-space:nowrap;font-variant-numeric:tabular-nums}
+.live-dot{position:relative;width:8px;height:8px;border-radius:50%;background:var(--green)}
+.live-dot::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--green);opacity:0}
+.dash-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.375rem;margin-top:.75rem}
+@media (min-width:400px){.dash-stats{gap:.625rem}}
+.stat{min-width:0;border-radius:var(--r-tile);background:rgb(255 255 255 / .045);box-shadow:inset 0 0 0 1px rgb(255 255 255 / .09);padding:.625rem .5rem .6875rem}
+@media (min-width:400px){.stat{padding:.75rem}}
+.stat-ic{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:7px}
+.stat-ic .ic{width:15px;height:15px}
+.tone-o{background:rgb(249 115 22 / .16);color:var(--orange)}
+.tone-r{background:rgb(244 63 94 / .16);color:#FB7185}
+.tone-g{background:rgb(22 163 74 / .18);color:#4ADE80}
+.stat-num{display:block;margin-top:.5rem;font-size:1.5rem;line-height:1.1;font-weight:800;letter-spacing:-0.02em;font-variant-numeric:tabular-nums}
+.stat-lbl{display:block;margin-top:.125rem;font-size:.75rem;line-height:1.3;color:rgb(255 255 255 / .7);overflow-wrap:normal;hyphens:manual}
+.dash-alert{display:flex;gap:.75rem;margin-top:.875rem;padding:.875rem;border-radius:var(--r-tile);background:linear-gradient(90deg,rgb(249 115 22 / .2),rgb(249 115 22 / .05));box-shadow:inset 0 0 0 1px rgb(249 115 22 / .42)}
+.alert-ic{display:grid;place-items:center;flex-shrink:0;width:36px;height:36px;border-radius:9px;background:var(--orange);color:#fff;box-shadow:0 8px 18px -8px rgb(249 115 22 / .7)}
+.alert-ic .ic{width:18px;height:18px}
+.alert-body{min-width:0}
+.alert-lbl{display:block;font-size:.6875rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--orange-300)}
+.alert-title{display:block;margin-top:.1875rem;font-weight:700;font-size:.9375rem;line-height:1.35;color:#fff}
+.alert-text{display:block;margin-top:.125rem;font-size:.8125rem;color:rgb(255 255 255 / .78)}
+.dash-row{display:flex;align-items:center;justify-content:space-between;gap:.75rem;margin-top:.625rem;padding:.625rem .75rem;border-radius:10px;background:rgb(255 255 255 / .045);box-shadow:inset 0 0 0 1px rgb(255 255 255 / .09)}
+.dash-row > div{min-width:0}
+.row-title{display:block;font-size:.875rem;font-weight:600;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.row-text{display:block;font-size:.75rem;color:rgb(255 255 255 / .65)}
+.dash-row .ic{width:16px;height:16px;color:rgb(255 255 255 / .45)}
+
+/* ---------- 18:47 ---------- */
+.evening{background:var(--navy-900);color:rgb(255 255 255 / .8);position:relative;overflow:hidden;isolation:isolate}
+.evening::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(40% 50% at 12% 18%,rgb(249 115 22 / .14),transparent 70%),radial-gradient(35% 40% at 95% 100%,rgb(29 61 92 / .7),transparent 70%)}
+.evening-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:2rem}
+@media (min-width:1024px){.evening-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:4rem;align-items:start}}
+.clock{display:grid;gap:.75rem;align-content:start}
+@media (min-width:1024px){.clock{position:sticky;top:2.5rem}}
+.clock-time{font-size:clamp(4.25rem,2.6rem + 7vw,8.5rem);line-height:.9;font-weight:800;letter-spacing:-0.04em;color:var(--orange);font-variant-numeric:tabular-nums}
+.clock-span{display:flex;align-items:center;gap:.75rem;max-width:22rem;font-size:.875rem;font-weight:600;color:rgb(255 255 255 / .55);font-variant-numeric:tabular-nums}
+.clock-track{position:relative;flex:1;height:2px;background:rgb(255 255 255 / .12);border-radius:2px;overflow:hidden}
+.clock-fill{position:absolute;inset:0;background:linear-gradient(90deg,var(--orange),rgb(249 115 22 / .35));transform-origin:left center}
+.label{font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange-300)}
+.evening h2{color:#fff;margin-top:.75rem}
+.story{display:grid;gap:.875rem;margin-top:1.375rem;max-width:40rem;font-size:1.0625rem}
+@media (min-width:768px){.story{font-size:1.125rem}}
+.story p:last-child{color:#fff;font-weight:600}
+.punch{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid rgb(255 255 255 / .12);font-size:clamp(1.25rem,1rem + .9vw,1.625rem);line-height:1.35;font-weight:700;color:#fff;letter-spacing:-0.015em;max-width:36rem}
+.punch em{font-style:normal;color:var(--orange)}
+.insight{margin:clamp(2.5rem,2rem + 2vw,4rem) 0 0;padding:clamp(1.5rem,1rem + 2.4vw,2.75rem);border-radius:var(--r-card);background:var(--navy-800);box-shadow:inset 0 0 0 1px rgb(255 255 255 / .08)}
+.insight .ic{width:32px;height:32px;color:var(--orange);stroke-width:1.75}
+.insight blockquote{margin:1rem 0 0}
+.insight blockquote p{font-size:clamp(1.1875rem,.95rem + 1vw,1.625rem);line-height:1.45;font-weight:600;color:#fff;letter-spacing:-0.015em;max-width:52rem}
+.insight figcaption{margin-top:1rem;font-size:.9375rem;color:rgb(255 255 255 / .68);font-style:italic}
+
+/* ---------- Come funziona ---------- */
+.steps{display:grid;grid-template-columns:minmax(0,1fr);gap:1.75rem;margin-top:2.25rem}
+@media (min-width:900px){.steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:2.5rem;margin-top:3rem}}
+.step{position:relative;display:grid;grid-template-columns:auto 1fr;gap:0 1rem}
+@media (min-width:900px){.step{display:block}}
+.step-ic{position:relative;display:grid;place-items:center;width:52px;height:52px;border-radius:14px;background:var(--orange-soft);color:var(--orange-700);box-shadow:inset 0 0 0 1px rgb(234 88 12 / .16);grid-row:span 2}
+.step-ic .ic{width:24px;height:24px;stroke-width:1.75}
+/* linea che unisce i passaggi: verticale su mobile, orizzontale da 900px */
+.step:not(:last-child)::after{content:"";position:absolute;left:25px;top:60px;bottom:-1.5rem;width:0;border-left:2px dashed var(--ink-300)}
+@media (min-width:900px){.step:not(:last-child)::after{left:68px;right:-1.5rem;top:25px;bottom:auto;width:auto;height:0;border-left:0;border-top:2px dashed var(--ink-300)}}
+.step h3{margin-top:.25rem}
+@media (min-width:900px){.step h3{margin-top:1.25rem}}
+.step h3 .n{color:var(--orange-700);margin-right:.25rem;font-variant-numeric:tabular-nums}
+.step p{margin-top:.375rem;color:var(--ink-700);max-width:30rem}
+
+.sheet{margin:2.75rem 0 0;border-radius:var(--r-card);background:#fff;box-shadow:inset 0 0 0 1px var(--line),var(--shadow-card);overflow:hidden}
+.sheet-bar{display:flex;align-items:center;gap:.5rem;padding:.75rem 1rem;border-bottom:1px solid var(--line);background:var(--surface);font-size:.875rem;font-weight:600;color:var(--ink-900)}
+.sheet-bar .ic{width:18px;height:18px;color:var(--green-700)}
+.sheet-bar .tab{margin-left:auto;font-size:.75rem;font-weight:700;color:var(--orange-700);background:var(--orange-soft);border-radius:6px;padding:.1875rem .5rem}
+.sheet-scroll{overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+.sheet-scroll:focus-visible{outline-offset:-3px}
+.sheet table{width:100%;min-width:640px;border-collapse:collapse;font-size:.9375rem}
+.sheet th{background:var(--navy-900);color:#fff;font-weight:700;text-align:left;padding:.75rem 1rem;white-space:nowrap;border-right:1px solid rgb(255 255 255 / .1)}
+.sheet td{padding:.6875rem 1rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);height:2.75rem;white-space:nowrap}
+.sheet tr > :last-child{border-right:0}
+.sheet .ex td{color:var(--ink-500);font-style:italic;background:var(--surface)}
+.sheet td.num{text-align:right;font-variant-numeric:tabular-nums}
+
+/* ---------- Cosa ricevi ---------- */
+.get{background:var(--surface)}
+.bento{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem;margin-top:2.25rem}
+@media (min-width:900px){.bento{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);grid-template-rows:auto auto;gap:1.25rem;margin-top:3rem}.tile-main{grid-row:span 2}}
+.tile{border-radius:var(--r-card);padding:clamp(1.5rem,1.2rem + 1vw,2rem)}
+.tile-head{display:flex;align-items:center;gap:.875rem}
+.tile-ic{display:grid;place-items:center;flex-shrink:0;width:44px;height:44px;border-radius:12px}
+.tile-ic .ic{width:22px;height:22px;stroke-width:1.75}
+.tile p{margin-top:.75rem}
+.tile p{max-width:32rem}
+.tile-main{background:linear-gradient(160deg,var(--navy-900) 0%,var(--navy-950) 100%);color:rgb(255 255 255 / .78);display:flex;flex-direction:column}
+.tile-main h3{color:#fff;font-size:clamp(1.375rem,1.1rem + .8vw,1.75rem)}
+.tile-main .tile-ic{background:rgb(249 115 22 / .16);color:var(--orange)}
+.tile-preview{display:grid;gap:.5rem;margin-top:auto;padding-top:1.75rem}
+.tile-preview .dash-row{margin-top:0}
+.tile-plain{background:#fff;box-shadow:inset 0 0 0 1px var(--line)}
+.tile-plain .tile-ic{background:var(--rose-soft);color:var(--rose-600)}
+.tile-soft{background:var(--orange-soft);box-shadow:inset 0 0 0 1px rgb(234 88 12 / .14)}
+.tile-soft .tile-ic{background:#fff;color:var(--orange-700)}
+
+/* ---------- Per chi è ---------- */
+.fit-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1rem}
+@media (min-width:900px){.fit-grid{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:1.25rem;align-items:stretch}}
+.fit-yes{border-radius:var(--r-card);background:#fff;box-shadow:inset 0 0 0 1px var(--line),var(--shadow-card);padding:clamp(1.5rem,1.1rem + 1.6vw,2.5rem)}
+.fit-no{border-radius:var(--r-card);background:var(--surface);box-shadow:inset 0 0 0 1px var(--line);padding:clamp(1.5rem,1.1rem + 1.6vw,2.5rem)}
+.fit-no h3{font-size:clamp(1.25rem,1.05rem + .7vw,1.5rem)}
+.checklist{display:grid;gap:1rem;margin-top:1.5rem}
+.checklist li{display:grid;grid-template-columns:28px 1fr;gap:.875rem;align-items:start;font-size:1.0625rem;color:var(--ink-900)}
+.fit-no .checklist li{color:var(--ink-700)}
+.mark{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;margin-top:-1px}
+.mark .ic{width:16px;height:16px;stroke-width:2.5}
+.mark-yes{background:var(--green-soft);color:var(--green);box-shadow:inset 0 0 0 1px rgb(22 163 74 / .22)}
+.mark-no{background:var(--rose-soft);color:var(--rose);box-shadow:inset 0 0 0 1px rgb(244 63 94 / .22)}
+
+/* ---------- Detto chiaro ---------- */
+.clear{background:var(--navy-950);color:#fff;padding-block:clamp(3rem,2.2rem + 3vw,4.75rem)}
+.clear-inner{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem;justify-items:start}
+@media (min-width:900px){.clear-inner{grid-template-columns:auto minmax(0,1fr);gap:2rem;align-items:start}}
+.clear-ic{display:grid;place-items:center;width:56px;height:56px;border-radius:14px;background:rgb(249 115 22 / .14);color:var(--orange);box-shadow:inset 0 0 0 1px rgb(249 115 22 / .3)}
+.clear-ic .ic{width:28px;height:28px;stroke-width:1.75}
+.clear-text{margin-top:.625rem;font-size:clamp(1.25rem,1rem + 1.1vw,1.875rem);line-height:1.4;font-weight:600;letter-spacing:-0.015em;max-width:48rem;color:#fff}
+
+/* ---------- Voci degli RSPP ---------- */
+.quotes{display:grid;grid-template-columns:minmax(0,1fr);gap:1.25rem;margin-top:2.25rem}
+@media (min-width:900px){.quotes{grid-template-columns:repeat(3,minmax(0,1fr));gap:2.5rem;margin-top:3rem}}
+.voice{margin:0;padding-top:1.25rem;border-top:1px solid var(--line);display:flex;flex-direction:column}
+.voice .ic{width:28px;height:28px;color:var(--orange);stroke-width:1.75}
+.voice blockquote{margin:.875rem 0 0;flex:1}
+.voice blockquote p{font-size:1.125rem;line-height:1.55;font-weight:500;color:var(--ink-900)}
+.voice figcaption{margin-top:1.25rem;display:grid;gap:.125rem;font-size:.9375rem}
+.voice figcaption strong{color:var(--ink-900);font-weight:700}
+.voice figcaption span{color:var(--ink-500)}
+.voices-note{margin-top:2rem;font-size:.9375rem;color:var(--ink-500);font-style:italic}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--surface)}
+.faq-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:1.5rem}
+@media (min-width:900px){.faq-grid{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:4rem;align-items:start}}
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:60px;padding:1rem 0;cursor:pointer;list-style:none;font-size:1.0625rem;font-weight:700;color:var(--ink-900);line-height:1.4;
+  touch-action:manipulation;-webkit-user-select:none;user-select:none;border-radius:6px}
+.faq-item summary::-webkit-details-marker{display:none}
+.chev{display:grid;place-items:center;flex-shrink:0;width:32px;height:32px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 1px var(--line);color:var(--ink-700);transition:transform 220ms var(--ease-out),background-color 200ms ease,color 200ms ease}
+.chev .ic{width:18px;height:18px}
+.faq-item[open] .chev{transform:rotate(180deg);background:var(--orange-soft);color:var(--orange-700)}
+@media (hover:hover) and (pointer:fine){.faq-item summary:hover .chev{color:var(--orange-700)}}
+.faq-a{padding:0 3rem 1.25rem 0;color:var(--ink-700);max-width:40rem}
+
+/* ---------- Modulo ---------- */
+.form-section{background:linear-gradient(180deg,#fff 0%,var(--orange-soft) 100%)}
+.form-shell{max-width:720px;margin-inline:auto}
+.form-head{text-align:center}
+.form-head p{margin-top:.625rem;font-size:1.0625rem}
+.form-card{margin-top:1.75rem;border-radius:var(--r-card);background:#fff;box-shadow:inset 0 0 0 1px var(--line),var(--shadow-card);padding:clamp(1.25rem,.9rem + 1.6vw,2.25rem);scroll-margin-top:16px}
+.fields{display:grid;grid-template-columns:minmax(0,1fr);gap:1.125rem}
+@media (min-width:640px){.fields{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}.span-2{grid-column:1 / -1}}
+.field{display:grid;gap:.4375rem;align-content:start;min-width:0}
+.field label,.field legend{font-size:.9375rem;font-weight:700;color:var(--ink-900);line-height:1.35}
+.req{color:var(--orange-700);margin-left:.125rem}
+.opt{font-weight:500;color:var(--ink-500)}
+.input,.select{width:100%;min-height:52px;padding:.75rem .875rem;border-radius:10px;border:1.5px solid var(--ink-400);background:#fff;font-size:max(16px,1rem);color:var(--ink-900);line-height:1.3;
+  transition:border-color 150ms ease,box-shadow 150ms ease;caret-color:var(--orange-600)}
+.input:focus,.select:focus{outline:none;border-color:var(--orange-600);box-shadow:0 0 0 4px rgb(234 88 12 / .16)}
+.select{appearance:none;-webkit-appearance:none;padding-right:2.75rem;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23334155' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .875rem center;background-size:18px}
+.select:invalid,.select.is-placeholder{color:var(--ink-500)}
+.select option{color:var(--ink-900)}
+[aria-invalid="true"].input,[aria-invalid="true"].select{border-color:var(--rose-600)}
+[aria-invalid="true"].input:focus,[aria-invalid="true"].select:focus{box-shadow:0 0 0 4px rgb(225 29 72 / .14)}
+fieldset.field{border:0;margin:0;padding:0}
+fieldset.field legend{padding:0;margin-bottom:.4375rem}
+.choices{display:grid;grid-template-columns:minmax(0,1fr);gap:.5rem}
+@media (min-width:480px){.choices{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.choice{position:relative;display:block;min-width:0}
+.choice input{position:absolute;inset:0;z-index:1;width:100%;height:100%;margin:0;opacity:0;cursor:pointer}
+.choice-ui{display:flex;align-items:center;justify-content:flex-start;gap:.75rem;min-height:52px;padding:.5rem 1rem;border-radius:10px;border:1.5px solid var(--ink-400);background:#fff;font-weight:700;font-size:.9375rem;color:var(--ink-900);text-align:center;line-height:1.3;
+  user-select:none;-webkit-user-select:none;transition:border-color 150ms ease,background-color 150ms ease,transform 140ms var(--ease-out)}
+.choice-ui{font-size:1rem}
+@media (min-width:480px){.choice-ui{justify-content:center;gap:.5rem;padding:.5rem .75rem}}
+.choice-dot{position:relative;flex-shrink:0;width:18px;height:18px;border-radius:50%;border:1.5px solid var(--ink-400);background:#fff;transition:border-color 150ms ease}
+.choice-dot::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--orange-600);transform:scale(.4);opacity:0;transition:transform 180ms var(--ease-out),opacity 150ms ease}
+.choice input:checked + .choice-ui{border-color:var(--orange-600);background:var(--orange-soft)}
+.choice input:checked + .choice-ui .choice-dot{border-color:var(--orange-600)}
+.choice input:checked + .choice-ui .choice-dot::after{transform:scale(1);opacity:1}
+.choice input:focus-visible + .choice-ui{outline:3px solid var(--focus);outline-offset:2px}
+.choice input:active + .choice-ui{transform:scale(.98)}
+@media (hover:hover) and (pointer:fine){.choice input:not(:checked):hover + .choice-ui{border-color:var(--ink-500);background:var(--surface)}}
+.choices[aria-invalid="true"] .choice-ui,.is-invalid .choice-ui{border-color:var(--rose-600)}
+.consent{display:grid;grid-template-columns:24px 1fr;gap:.75rem;align-items:start;min-height:44px;padding:.25rem 0;cursor:pointer;font-size:.9375rem;line-height:1.5;color:var(--ink-700)}
+.consent input{width:22px;height:22px;margin:.0625rem 0 0;accent-color:var(--orange-600);cursor:pointer}
+.err{display:flex;align-items:flex-start;gap:.375rem;font-size:.875rem;font-weight:600;line-height:1.4;color:var(--rose-700)}
+.err[hidden]{display:none}
+.err .ic{width:16px;height:16px;margin-top:.125rem}
+.form-actions{margin-top:1.5rem}
+.form-note{margin-top:.875rem;text-align:center;font-size:.875rem;color:var(--ink-500)}
+.btn .spin{display:none;width:20px;height:20px}
+.btn.is-loading{pointer-events:none;background:var(--orange-700)}
+.btn.is-loading .spin{display:block}
+.btn.is-loading .ic-arrow{display:none}
+.btn[disabled]{cursor:progress}
+
+/* Thank-you */
+.thanks{text-align:center;padding-block:.5rem}
+.thanks[hidden]{display:none}
+.thanks h2{margin-top:1.25rem;outline:none}
+.thanks p{margin:.75rem auto 0;max-width:30rem;font-size:1.0625rem}
+.thanks .cta-row{justify-content:center;margin-top:1.75rem}
+.done{position:relative;display:grid;place-items:center;width:64px;height:64px;margin-inline:auto;border-radius:50%;background:var(--green-soft);color:var(--green);box-shadow:inset 0 0 0 1.5px rgb(22 163 74 / .3)}
+.done svg{width:30px;height:30px;stroke-width:2.5}
+.done-out{background:var(--orange-soft);color:var(--orange-700);box-shadow:inset 0 0 0 1.5px rgb(234 88 12 / .28)}
+.slot{margin:1.25rem auto 0;max-width:30rem;display:grid;grid-template-columns:auto 1fr;gap:.25rem .875rem;align-items:center;text-align:left;border-radius:var(--r-tile);border:1.5px dashed var(--ink-400);background:var(--surface);padding:1rem 1.125rem;transform-origin:top center}
+.slot[hidden]{display:none}
+.slot .ic{grid-row:span 2;width:28px;height:28px;color:var(--ink-500);stroke-width:1.75}
+.slot-tag{justify-self:start;font-size:.6875rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-700);background:#fff;border-radius:6px;padding:.125rem .4375rem;box-shadow:inset 0 0 0 1px var(--line)}
+.slot p{margin:0;max-width:none;font-size:.9375rem;font-weight:600;color:var(--ink-900)}
+
+/* Blocco prova: secondario rispetto alla call */
+.trial{margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid var(--line);max-width:30rem}
+.trial h3{font-size:1rem;line-height:1.35;letter-spacing:-0.01em}
+.trial p{margin-top:.25rem;font-size:.9375rem;color:var(--ink-700)}
+.trial-link{display:inline-flex;align-items:center;min-height:44px;padding:.25rem .25rem;margin-top:.125rem;font-weight:700;font-size:.9375rem;color:var(--orange-700);text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:4px;text-decoration-color:rgb(194 65 12 / .35);border-radius:6px;touch-action:manipulation;transition:text-decoration-color 200ms ease,color 200ms ease}
+@media (hover:hover) and (pointer:fine){.trial-link:hover{color:var(--ink-900);text-decoration-color:currentColor}}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--navy-950);color:rgb(255 255 255 / .72);padding:2.5rem 0 calc(2.5rem + env(safe-area-inset-bottom,0px));font-size:.9375rem}
+.footer-main{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .625rem;color:#fff;font-weight:600}
+.footer-main svg{width:22px;height:22px}
+.footer-small{margin-top:1rem;font-size:.8125rem;color:rgb(255 255 255 / .6);max-width:40rem}
+
+/* ---------- CTA fissa mobile ---------- */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:.625rem max(16px,env(safe-area-inset-left)) calc(.625rem + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-right));
+  background:rgb(255 255 255 / .97);box-shadow:0 -1px 0 var(--line),0 -12px 28px -16px rgb(15 39 66 / .3);
+  transform:translateY(110%);opacity:0;visibility:hidden;transition:transform 220ms var(--ease-out),opacity 220ms var(--ease-out),visibility 0s linear 220ms}
+.sticky-cta.is-shown{transform:none;opacity:1;visibility:visible;transition:transform 260ms var(--ease-out),opacity 200ms var(--ease-out),visibility 0s}
+.sticky-cta .btn{width:100%}
+@media (min-width:768px){.sticky-cta{display:none}}
+
+/* =================== Movimento (solo senza prefers-reduced-motion) =================== */
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes notify{from{opacity:0;transform:translateY(-8px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes ping{0%{transform:scale(1);opacity:.55}80%,100%{transform:scale(2.6);opacity:0}}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+@keyframes popIn{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:none}}
+@keyframes draw{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:no-preference){
+  .hero .anim{animation:rise 400ms var(--ease-out) both;animation-delay:calc(var(--i,0) * 60ms)}
+  .hero-visual .dash{animation:rise 420ms var(--ease-out) 140ms both}
+  .dash .stat{animation:rise 320ms var(--ease-out) both;animation-delay:calc(320ms + var(--i,0) * 70ms)}
+  .dash .dash-alert{animation:notify 360ms var(--ease-out) 640ms both}
+  .dash .dash-row.anim-row{animation:rise 300ms var(--ease-out) 780ms both}
+  .live-dot::after{animation:ping 2.4s cubic-bezier(0,0,.2,1) 1.2s infinite}
+  .reveal-on .reveal{opacity:0;transform:translateY(10px);transition:opacity 360ms var(--ease-out),transform 360ms var(--ease-out);transition-delay:calc(var(--d,0) * 60ms)}
+  .reveal-on .reveal.is-in{opacity:1;transform:none}
+  .reveal-on .clock-fill{transform:scaleX(0);transition:transform 1.4s var(--ease-in-out) 250ms}
+  .reveal-on .clock.is-in .clock-fill{transform:scaleX(1)}
+  .faq-item[open] .faq-a{animation:fadeDown 220ms var(--ease-out)}
+  .slot:not([hidden]){animation:fadeDown 200ms var(--ease-out)}
+  .thanks.is-entering{animation:rise 320ms var(--ease-out) both}
+  .thanks.is-entering .done{animation:popIn 320ms var(--ease-out) 60ms both}
+  .thanks.is-entering .done svg{animation:draw 380ms var(--ease-out) 260ms both}
+  .btn.is-loading .spin{animation:spin 700ms linear infinite}
+}
+@media print{
+  .sticky-cta{display:none!important}
+  .reveal{opacity:1!important;transform:none!important}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <!-- Icone: set unico Lucide (ISC), tratto 2 / 1,75 -->
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-file-search" viewBox="0 0 24 24"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M4.268 21a2 2 0 0 0 1.727 1H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3"/><path d="m9 18-1.5-1.5"/><circle cx="5" cy="14" r="3"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-chev-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-chev-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-sheet" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M8 13h2"/><path d="M14 13h2"/><path d="M8 17h2"/><path d="M14 17h2"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></symbol>
+  <symbol id="i-presentation" viewBox="0 0 24 24"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></symbol>
+  <symbol id="i-list-checks" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M13 8H7"/><path d="M17 12H7"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-quote" viewBox="0 0 24 24"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+  <symbol id="i-circle-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="8" y2="12"/><line x1="12" x2="12.01" y1="16" y2="16"/></symbol>
+  <symbol id="i-loader" viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></symbol>
+  <symbol id="logo-shield" viewBox="0 0 64 64"><path fill-rule="evenodd" style="fill:var(--shield,#0f2742)" stroke="none" d="M32 3.5C46 3.5 58.5 10.5 58.5 20.5L58.5 37C58.5 50 46 59.5 32 63.5C18 59.5 5.5 50 5.5 37L5.5 20.5C5.5 10.5 18 3.5 32 3.5Z M32 11C43.5 11 52 16.5 52 23.5L52 37C52 47 43.5 54 32 57.5C20.5 54 12 47 12 37L12 23.5C12 16.5 20.5 11 32 11Z"/><path d="M19.5 34L28.5 45L46.5 19.5" fill="none" stroke="#f97316" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<div class="topbar"><p><strong>Check-up normativo gratuito</strong> <span class="sep" aria-hidden="true">·</span> Per RSPP esterni e studi HSE con almeno 30 clienti</p></div>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="logo" href="#top" aria-label="NextHSE, torna all’inizio">
+      <svg aria-hidden="true"><use href="#logo-shield"/></svg>
+      <span class="wordmark" aria-hidden="true">Next<b>HSE</b></span>
+    </a>
+    <a class="btn btn-secondary btn-small header-cta" href="#check-up">Richiedi il check-up gratuito</a>
+  </div>
+</header>
+
+<main>
+  <!-- ============ Apertura ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="pill anim" style="--i:0"><span class="pill-dot" aria-hidden="true"></span>Check-up normativo gratuito</p>
+        <h1 id="hero-title" class="anim" style="--i:1"><span class="line">È uscito un interpello.</span> <span class="line accent">Quali dei tuoi clienti sono coinvolti?</span></h1>
+        <p class="lede anim" style="--i:2">Mandaci l’elenco anonimo dei tuoi clienti. In una call di 20 minuti ti mostriamo chi è impattato dagli ultimi aggiornamenti normativi, cosa verificare e cosa comunicare.</p>
+        <div class="cta-row anim" style="--i:3" id="hero-cta">
+          <a class="btn btn-primary" href="#check-up">Richiedi il check-up gratuito <svg class="ic ic-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-secondary" href="#come-funziona">Come funziona</a>
+        </div>
+        <ul class="badges anim" style="--i:4" aria-label="Condizioni del check-up">
+          <li><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg>Gratis</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg>Nessun nome dei clienti</li>
+          <li><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Nessun impegno</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="dash" role="img" aria-label="Esempio della dashboard NextHSE alle 9:14. Clienti impattati 42, da verificare 5, comunicazioni 18. Aggiornamento normativo: Interpello n. 4/2026, uso DPI, 12 clienti potenzialmente coinvolti. Circolare INL, sorveglianza sanitaria: 8 clienti da verificare.">
+          <div class="dash-head">
+            <span class="dash-brand">
+              <svg style="--shield:#fff"><use href="#logo-shield"/></svg>
+              <span class="wordmark">Next<b>HSE</b></span>
+              <span class="dash-sub">· Dashboard</span>
+            </span>
+            <span class="live"><span class="live-dot"></span>Live · 09:14</span>
+          </div>
+          <div class="dash-stats">
+            <div class="stat" style="--i:0"><span class="stat-ic tone-o"><svg class="ic"><use href="#i-users"/></svg></span><span class="stat-num" data-count="42">42</span><span class="stat-lbl">Clienti impattati</span></div>
+            <div class="stat" style="--i:1"><span class="stat-ic tone-r"><svg class="ic"><use href="#i-file-search"/></svg></span><span class="stat-num" data-count="5">5</span><span class="stat-lbl">Da verificare</span></div>
+            <div class="stat" style="--i:2"><span class="stat-ic tone-g"><svg class="ic"><use href="#i-mail"/></svg></span><span class="stat-num" data-count="18">18</span><span class="stat-lbl">Comuni&shy;cazioni</span></div>
+          </div>
+          <div class="dash-alert">
+            <span class="alert-ic"><svg class="ic"><use href="#i-alert"/></svg></span>
+            <span class="alert-body">
+              <span class="alert-lbl">Aggiornamento normativo</span>
+              <span class="alert-title">Interpello n. 4/2026 — uso DPI</span>
+              <span class="alert-text">12 clienti potenzialmente coinvolti</span>
+            </span>
+          </div>
+          <div class="dash-row anim-row">
+            <div><span class="row-title">Circolare INL — sorveglianza sanitaria</span><span class="row-text">8 clienti da verificare</span></div>
+            <svg class="ic"><use href="#i-chev-right"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Le 18:47 ============ -->
+  <section class="evening section" aria-labelledby="problema-title">
+    <div class="wrap">
+      <div class="evening-grid">
+        <div class="clock reveal" aria-hidden="true">
+          <span class="clock-time">18:47</span>
+          <span class="clock-span">18:47 <span class="clock-track"><span class="clock-fill"></span></span> 22:00</span>
+        </div>
+        <div>
+          <p class="label reveal">Il vero problema</p>
+          <h2 id="problema-title" class="h2 reveal" style="--d:1">Il problema non è sapere che una norma è cambiata.</h2>
+          <div class="story reveal" style="--d:2">
+            <p>È uscita alle 18:47. L’hai letta in due minuti.</p>
+            <p>Poi è iniziato il lavoro vero: aprire l’Excel, filtrare per settore, ricordarti chi ha fatto la formazione a marzo, chi ha cambiato sede, chi ha quel macchinario.</p>
+            <p>Alle 22 hai una lista. Forse completa.</p>
+          </div>
+          <p class="punch reveal" style="--d:3">NextHSE fa quel lavoro ogni mattina, per tutti i tuoi clienti. <em>In 5 minuti, non in 5 ore.</em></p>
+        </div>
+      </div>
+      <figure class="insight reveal">
+        <svg class="ic" aria-hidden="true"><use href="#i-quote"/></svg>
+        <blockquote><p>«Il problema non è sapere che una norma è cambiata. Il problema è capire subito quali clienti sono impattati e cosa fare domani mattina.»</p></blockquote>
+        <figcaption>Insight emerso da interviste con RSPP e consulenti HSE italiani.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ Come funziona ============ -->
+  <section class="section" id="come-funziona" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title" class="h2 reveal">Tre passaggi. Nessun nome dei tuoi clienti.</h2>
+      <ol class="steps">
+        <li class="step reveal" style="--d:0">
+          <span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-send"/></svg></span>
+          <h3 class="h3"><span class="n">1.</span>Richiedi il check-up.</h3>
+          <p>30 secondi: chi sei, il tuo studio, quanti clienti segui.</p>
+        </li>
+        <li class="step reveal" style="--d:1">
+          <span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-sheet"/></svg></span>
+          <h3 class="h3"><span class="n">2.</span>Compili il modello.</h3>
+          <p>5 colonne: codice cliente, settore o ATECO, dipendenti, classe di rischio, provincia. Niente ragioni sociali, niente dati personali.</p>
+        </li>
+        <li class="step reveal" style="--d:2">
+          <span class="step-ic"><svg class="ic" aria-hidden="true"><use href="#i-presentation"/></svg></span>
+          <h3 class="h3"><span class="n">3.</span>Ricevi il report in call.</h3>
+          <p>20 minuti in cui ti mostriamo, sui tuoi clienti, chi è impattato, cosa verificare e quali comunicazioni inviare.</p>
+        </li>
+      </ol>
+
+      <figure class="sheet reveal">
+        <div class="sheet-bar"><svg class="ic" aria-hidden="true"><use href="#i-sheet"/></svg>modello-check-up-nexthse.xlsx<span class="tab" aria-hidden="true">Clienti</span></div>
+        <div class="sheet-scroll" tabindex="0" role="region" aria-label="Anteprima del modello, scorrevole in orizzontale">
+          <table>
+            <caption class="sr-only">Anteprima del modello check-up: 5 colonne e una riga di esempio</caption>
+            <thead><tr><th scope="col">Codice cliente</th><th scope="col">Settore o codice ATECO</th><th scope="col">N. dipendenti</th><th scope="col">Classe di rischio</th><th scope="col">Provincia</th></tr></thead>
+            <tbody>
+              <tr class="ex"><td>C001</td><td>25.62 Lavori di meccanica generale</td><td class="num">18</td><td>Alto</td><td>TO</td></tr>
+              <tr aria-hidden="true"><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr aria-hidden="true"><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ Cosa ricevi ============ -->
+  <section class="get section" aria-labelledby="get-title">
+    <div class="wrap">
+      <h2 id="get-title" class="h2 reveal">Cosa ti portiamo in call</h2>
+      <div class="bento">
+        <article class="tile tile-main reveal" style="--d:0">
+          <div class="tile-head"><span class="tile-ic"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg></span><h3 class="h3">Clienti impattati.</h3></div>
+          <p>L’elenco dei tuoi clienti potenzialmente coinvolti da norme, interpelli, accordi e circolari recenti.</p>
+          <div class="tile-preview" aria-hidden="true">
+            <div class="dash-row"><div><span class="row-title">Interpello n. 4/2026 — uso DPI</span><span class="row-text">12 clienti potenzialmente coinvolti</span></div><svg class="ic"><use href="#i-chev-right"/></svg></div>
+            <div class="dash-row"><div><span class="row-title">Circolare INL — sorveglianza sanitaria</span><span class="row-text">8 clienti da verificare</span></div><svg class="ic"><use href="#i-chev-right"/></svg></div>
+          </div>
+        </article>
+        <article class="tile tile-plain reveal" style="--d:1">
+          <div class="tile-head"><span class="tile-ic"><svg class="ic" aria-hidden="true"><use href="#i-list-checks"/></svg></span><h3 class="h3">Cosa verificare.</h3></div>
+          <p>Per ognuno, le verifiche e i documenti da controllare.</p>
+        </article>
+        <article class="tile tile-soft reveal" style="--d:2">
+          <div class="tile-head"><span class="tile-ic"><svg class="ic" aria-hidden="true"><use href="#i-message"/></svg></span><h3 class="h3">Comunicazioni pronte.</h3></div>
+          <p>Una bozza chiara da inviare ai clienti coinvolti.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Per chi è ============ -->
+  <section class="section" aria-labelledby="fit-title">
+    <div class="wrap fit-grid">
+      <div class="fit-yes reveal">
+        <h2 id="fit-title" class="h2">È per te se…</h2>
+        <ul class="checklist">
+          <li><span class="mark mark-yes"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>Sei RSPP esterno, consulente HSE o titolare di uno studio sicurezza.</li>
+          <li><span class="mark mark-yes"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>Segui almeno 30 aziende.</li>
+          <li><span class="mark mark-yes"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span>La normativa ti ruba più sere di quante vorresti.</li>
+        </ul>
+      </div>
+      <div class="fit-no reveal" style="--d:1">
+        <h3>Non è per te se…</h3>
+        <ul class="checklist">
+          <li><span class="mark mark-no"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></span>Cerchi un software che scriva il DVR: NextHSE non lo fa.</li>
+          <li><span class="mark mark-no"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></span>Cerchi un parere legale: nemmeno.</li>
+          <li><span class="mark mark-no"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></span>Segui meno di 30 clienti: per ora non è pensato per te.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Detto chiaro ============ -->
+  <section class="clear" aria-label="Detto chiaro">
+    <div class="wrap clear-inner reveal">
+      <span class="clear-ic"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></span>
+      <div>
+        <p class="label">Detto chiaro</p>
+        <p class="clear-text">NextHSE non genera DVR, non dà pareri legali e non sostituisce l’RSPP. È un secondo livello di controllo: le decisioni restano sempre tue.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Voci degli RSPP ============ -->
+  <section class="section" aria-labelledby="voices-title">
+    <div class="wrap">
+      <h2 id="voices-title" class="h2 reveal">Voci degli RSPP</h2>
+      <div class="quotes">
+        <figure class="voice reveal" style="--d:0">
+          <svg class="ic" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote><p>«Le informazioni si trovano. Il problema è capire rapidamente quali clienti sono coinvolti e cosa fare.»</p></blockquote>
+          <figcaption><strong>Marco R.</strong><span>RSPP esterno · Lombardia</span></figcaption>
+        </figure>
+        <figure class="voice reveal" style="--d:1">
+          <svg class="ic" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote><p>«Le email ai clienti spesso non vengono lette. Serve un modo più ordinato per sapere chi ha ricevuto cosa e cosa manca.»</p></blockquote>
+          <figcaption><strong>Giulia P.</strong><span>Consulente HSE · Veneto</span></figcaption>
+        </figure>
+        <figure class="voice reveal" style="--d:2">
+          <svg class="ic" aria-hidden="true"><use href="#i-quote"/></svg>
+          <blockquote><p>«Il tempo si perde nel collegare normativa, documenti, clienti e azioni. Non nel leggere il titolo della norma.»</p></blockquote>
+          <figcaption><strong>Andrea D.</strong><span>Studio HSE · Emilia-Romagna</span></figcaption>
+        </figure>
+      </div>
+      <p class="voices-note reveal">Estratto dalle interviste con consulenti HSE italiani che gestiscono 30-300 clienti.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq section" aria-labelledby="faq-title">
+    <div class="wrap faq-grid">
+      <h2 id="faq-title" class="h2 reveal">Domande frequenti</h2>
+      <div class="faq-list reveal" style="--d:1">
+        <details class="faq-item">
+          <summary>Quanto costa il check-up?<span class="chev" aria-hidden="true"><svg class="ic"><use href="#i-chev-down"/></svg></span></summary>
+          <div class="faq-a"><p>Niente. NextHSE è in fase di lancio: il check-up serve a te per vedere il metodo sui tuoi clienti, e a noi per costruire lo strumento giusto.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Devo mandare i nomi dei miei clienti?<span class="chev" aria-hidden="true"><svg class="ic"><use href="#i-chev-down"/></svg></span></summary>
+          <div class="faq-a"><p>No. Il modello usa un tuo codice interno, il settore, i dipendenti, la classe di rischio e la provincia. Niente ragioni sociali, niente dati personali.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Quanto tempo mi serve?<span class="chev" aria-hidden="true"><svg class="ic"><use href="#i-chev-down"/></svg></span></summary>
+          <div class="faq-a"><p>Pochi minuti per compilare il modello, 20 minuti di call.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Quando ricevo il report?<span class="chev" aria-hidden="true"><svg class="ic"><use href="#i-chev-down"/></svg></span></summary>
+          <div class="faq-a"><p>Entro 48 ore lavorative dal file, nella call che prenoti tu.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Dopo la call devo comprare qualcosa?<span class="chev" aria-hidden="true"><svg class="ic"><use href="#i-chev-down"/></svg></span></summary>
+          <div class="faq-a"><p>No. Se NextHSE ti serve, ti diciamo quale piano fa al caso tuo. Se non ti serve, il report te lo tieni.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Serve installare qualcosa?<span class="chev" aria-hidden="true"><svg class="ic"><use href="#i-chev-down"/></svg></span></summary>
+          <div class="faq-a"><p>No, è una web app.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Modulo ============ -->
+  <section class="form-section section" id="check-up" aria-labelledby="form-title">
+    <div class="wrap">
+      <div class="form-shell">
+        <div class="form-state">
+          <div class="form-head reveal">
+            <h2 id="form-title" class="h2">Richiedi il check-up gratuito</h2>
+            <p>Ricevi subito via email il modello da compilare.</p>
+          </div>
+          <div class="form-card reveal" style="--d:1">
+            <!-- action "javascript:void(0)": se JS non parte, il modulo non va da nessuna parte (nessun dato in URL o verso server) -->
+            <form id="lead-form" action="javascript:void(0)" novalidate>
+              <div class="fields">
+                <div class="field">
+                  <label for="f-nome">Nome e cognome<span class="req" aria-hidden="true">*</span></label>
+                  <input class="input" id="f-nome" name="nome" type="text" autocomplete="name" autocapitalize="words" enterkeyhint="next" maxlength="120" required aria-describedby="e-nome">
+                  <p class="err" id="e-nome" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="f-email">Email<span class="req" aria-hidden="true">*</span></label>
+                  <input class="input" id="f-email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="none" autocorrect="off" spellcheck="false" enterkeyhint="next" maxlength="254" required aria-describedby="e-email">
+                  <p class="err" id="e-email" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="f-studio">Studio o azienda<span class="req" aria-hidden="true">*</span></label>
+                  <input class="input" id="f-studio" name="studio" type="text" autocomplete="organization" enterkeyhint="next" maxlength="160" required aria-describedby="e-studio">
+                  <p class="err" id="e-studio" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="f-ruolo">Ruolo<span class="req" aria-hidden="true">*</span></label>
+                  <select class="select is-placeholder" id="f-ruolo" name="ruolo" required aria-describedby="e-ruolo">
+                    <option value="" selected disabled>Seleziona</option>
+                    <option>RSPP esterno</option>
+                    <option>Consulente HSE</option>
+                    <option>Titolare studio sicurezza</option>
+                    <option>Collaboratore studio</option>
+                    <option>Altro</option>
+                  </select>
+                  <p class="err" id="e-ruolo" hidden></p>
+                </div>
+                <fieldset class="field span-2" id="g-clienti" aria-describedby="e-clienti">
+                  <legend>Quanti clienti segui?<span class="req" aria-hidden="true">*</span></legend>
+                  <div class="choices">
+                    <label class="choice"><input type="radio" name="clienti" value="meno_di_30" required><span class="choice-ui"><span class="choice-dot" aria-hidden="true"></span>Meno di 30</span></label>
+                    <label class="choice"><input type="radio" name="clienti" value="30_70"><span class="choice-ui"><span class="choice-dot" aria-hidden="true"></span>30–70</span></label>
+                    <label class="choice"><input type="radio" name="clienti" value="oltre_70"><span class="choice-ui"><span class="choice-dot" aria-hidden="true"></span>Oltre 70</span></label>
+                  </div>
+                  <p class="err" id="e-clienti" hidden></p>
+                </fieldset>
+                <div class="field span-2">
+                  <label for="f-tel">Telefono <span class="opt">(facoltativo)</span></label>
+                  <input class="input" id="f-tel" name="telefono" type="tel" inputmode="tel" autocomplete="tel" enterkeyhint="done" maxlength="30" aria-describedby="e-tel">
+                  <p class="err" id="e-tel" hidden></p>
+                </div>
+                <div class="field span-2">
+                  <label class="consent" for="f-privacy">
+                    <input id="f-privacy" name="privacy" type="checkbox" value="si" required aria-describedby="e-privacy">
+                    <span>Acconsento al trattamento dei miei dati per ricevere il check-up, secondo l’informativa privacy.<span class="req" aria-hidden="true">*</span></span>
+                  </label>
+                  <p class="err" id="e-privacy" hidden></p>
+                </div>
+              </div>
+
+              <!-- Campi nascosti: UTM e fbclid letti dall'URL, event_id per la deduplica Pixel/CAPI -->
+              <input type="hidden" name="utm_source">
+              <input type="hidden" name="utm_medium">
+              <input type="hidden" name="utm_campaign">
+              <input type="hidden" name="utm_content">
+              <input type="hidden" name="utm_term">
+              <input type="hidden" name="fbclid">
+              <input type="hidden" name="event_id">
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                  <span class="btn-label">Richiedi il check-up</span>
+                  <svg class="ic ic-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+                  <svg class="ic spin" aria-hidden="true"><use href="#i-loader"/></svg>
+                </button>
+                <p class="form-note">Gratis. Nessun nome dei clienti. Nessun impegno.</p>
+              </div>
+              <p class="sr-only" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Thank-you: fascia 30–70 e oltre 70 -->
+        <div class="form-card thanks" id="thanks-in" hidden>
+          <span class="done" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span>
+          <h2 class="h2" tabindex="-1">Fatto. Il modello è nella tua email.</h2>
+          <p>Compilalo quando vuoi: anche 40 righe vanno benissimo. Poi prenota la call di consegna.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="modello-check-up-nexthse.xlsx" download="Modello check-up NextHSE.xlsx"><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Scarica il modello Excel</a>
+            <a class="btn btn-secondary" href="#prenota" data-panel aria-controls="prenota" aria-expanded="false"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>Prenota la call di 20 minuti</a>
+          </div>
+          <!-- SEGNAPOSTO: qui andrà l'embed del calendario (GHL o Calendly) -->
+          <div class="slot" id="prenota" hidden>
+            <svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg>
+            <span class="slot-tag">Segnaposto</span>
+            <p>Qui va il calendario (GHL o Calendly)</p>
+          </div>
+          <!-- Passo successivo facoltativo: prova di 30 giorni (offerta reale NextHSE), volutamente più leggero della call -->
+          <div class="trial">
+            <h3>Vuoi partire subito?</h3>
+            <p>Prova NextHSE sui tuoi clienti per 30 giorni: oggi paghi 0 €.</p>
+            <a class="trial-link" href="https://www.nexthse.com/offerta-candidati" target="_blank" rel="noopener">Attiva la prova di 30 giorni →</a>
+          </div>
+        </div>
+
+        <!-- Thank-you: fascia meno di 30 -->
+        <div class="form-card thanks" id="thanks-out" hidden>
+          <span class="done done-out" aria-hidden="true"><svg class="ic"><use href="#i-check"/></svg></span>
+          <h2 class="h2" tabindex="-1">Grazie. Ti diciamo la verità.</h2>
+          <p>Per ora NextHSE è pensato per chi segue almeno 30 aziende. Il modello te lo lasciamo comunque: quando cresci, siamo qui.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="modello-check-up-nexthse.xlsx" download="Modello check-up NextHSE.xlsx"><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Scarica il modello Excel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-main"><svg aria-hidden="true" style="--shield:#fff"><use href="#logo-shield"/></svg>NextHSE · Torino · info@nexthse.com</p>
+    <p class="footer-small">Prototipo realizzato da Francesco Maria Mosca per la selezione NextHSE. Il modulo è dimostrativo e non invia dati.</p>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="sticky-cta" inert>
+  <a class="btn btn-primary" href="#check-up">Richiedi il check-up gratuito</a>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* =====================================================================
+     TRACCIAMENTO: predisposto ma SPENTO.
+     Con TRACKING_ENABLED = false non viene caricato nessuno script Meta o
+     Google e non parte nessuna richiesta. Gli ID sono segnaposto: il
+     prototipo non deve mai scrivere nel pixel reale di NextHSE.
+     In produzione va acceso solo dopo il consenso cookie.
+     ===================================================================== */
+  const TRACKING_ENABLED = false;
+  const META_PIXEL_ID = 'INSERISCI_PIXEL_ID';
+  const GA4_ID = 'G-XXXXXXX';
+
+  function initTracking() {
+    if (!TRACKING_ENABLED) return;
+    /* Meta Pixel: codice base + PageView */
+    !function (f, b, e, v, n, t, s) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s); }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    window.fbq('init', META_PIXEL_ID);
+    window.fbq('track', 'PageView');
+    /* GA4 (gtag.js) */
+    const g = document.createElement('script');
+    g.async = true;
+    g.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA4_ID);
+    document.head.appendChild(g);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA4_ID);
+  }
+
+  let leadTracked = false;
+  function trackLead(fascia, eventId) {
+    if (!TRACKING_ENABLED) return;
+    /* Lead una sola volta per sessione: ricaricare o tornare indietro non lo conta di nuovo */
+    let already = leadTracked;
+    try { already = already || sessionStorage.getItem('nx_lead_tracked') === '1'; } catch (e) {}
+    if (already) return;
+    /* eventID: lo stesso ID parte anche dal server con la Conversions API (campo nascosto event_id),
+       così Meta deduplica browser + CAPI e conta il lead una volta sola. */
+    if (window.fbq) window.fbq('track', 'Lead', { content_name: 'checkup_gratuito', fascia_clienti: fascia }, { eventID: eventId });
+    if (window.gtag) window.gtag('event', 'generate_lead', { content_name: 'checkup_gratuito', fascia_clienti: fascia, event_id: eventId });
+    leadTracked = true;
+    try { sessionStorage.setItem('nx_lead_tracked', '1'); } catch (e) {}
+  }
+
+  function uuid() {
+    if (window.crypto && typeof window.crypto.randomUUID === 'function') return window.crypto.randomUUID();
+    const b = new Uint8Array(16);
+    (window.crypto || window.msCrypto).getRandomValues(b);
+    b[6] = (b[6] & 0x0f) | 0x40; b[8] = (b[8] & 0x3f) | 0x80;
+    const h = Array.from(b, function (x) { return x.toString(16).padStart(2, '0'); }).join('');
+    return h.slice(0, 8) + '-' + h.slice(8, 12) + '-' + h.slice(12, 16) + '-' + h.slice(16, 20) + '-' + h.slice(20);
+  }
+
+  initTracking();
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const form = document.getElementById('lead-form');
+
+  /* ---------- UTM e fbclid dall'URL nei campi nascosti ---------- */
+  (function captureUtm() {
+    const keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid'];
+    let params;
+    try { params = new URLSearchParams(window.location.search); } catch (e) { return; }
+    let stored = {};
+    try { stored = JSON.parse(sessionStorage.getItem('nx_utm') || '{}') || {}; } catch (e) {}
+    keys.forEach(function (k) {
+      const v = params.get(k);
+      if (v) stored[k] = v.slice(0, 500);
+      if (stored[k] && form.elements[k]) form.elements[k].value = stored[k];
+    });
+    try { sessionStorage.setItem('nx_utm', JSON.stringify(stored)); } catch (e) {}
+  })();
+
+  /* ---------- Contatori della dashboard ---------- */
+  if (!reduceMotion) {
+    document.querySelectorAll('.stat-num[data-count]').forEach(function (el, i) {
+      const to = parseInt(el.getAttribute('data-count'), 10) || 0;
+      el.textContent = '0';
+      setTimeout(function () {
+        const t0 = performance.now(), dur = 900;
+        (function frame(t) {
+          const p = Math.min(1, (t - t0) / dur);
+          el.textContent = String(Math.round(to * (1 - Math.pow(1 - p, 3))));
+          if (p < 1) requestAnimationFrame(frame);
+        })(t0);
+      }, 360 + i * 70);
+    });
+  }
+
+  /* ---------- Comparse allo scroll (una volta sola) ---------- */
+  if (!reduceMotion && 'IntersectionObserver' in window) {
+    const els = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+    const io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    els.forEach(function (el) {
+      if (el.getBoundingClientRect().top < vh * 0.92) el.classList.add('is-in');
+      else io.observe(el);
+    });
+    document.documentElement.classList.add('reveal-on');
+  }
+
+  /* ---------- CTA fissa su mobile: dopo l'hero, sparisce sul modulo ---------- */
+  const sticky = document.getElementById('sticky-cta');
+  const heroCta = document.getElementById('hero-cta');
+  const formSection = document.getElementById('check-up');
+  const footer = document.querySelector('.site-footer');
+  const state = { hero: true, form: false, footer: false, done: false };
+  function updateSticky() {
+    const show = !state.hero && !state.form && !state.footer && !state.done;
+    sticky.classList.toggle('is-shown', show);
+    if (show) sticky.removeAttribute('inert'); else sticky.setAttribute('inert', '');
+  }
+  if ('IntersectionObserver' in window) {
+    const so = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.target === heroCta) state.hero = en.isIntersecting || en.boundingClientRect.top > 0;
+        else if (en.target === formSection) state.form = en.isIntersecting;
+        else if (en.target === footer) state.footer = en.isIntersecting;
+      });
+      updateSticky();
+    }, { threshold: 0 });
+    so.observe(heroCta); so.observe(formSection); so.observe(footer);
+  }
+
+  /* ---------- Modulo: validazione accessibile e invio simulato ---------- */
+  const submitBtn = document.getElementById('submit-btn');
+  const statusEl = document.getElementById('form-status');
+  const ruolo = document.getElementById('f-ruolo');
+  const ERR_ICON = '<svg class="ic" aria-hidden="true"><use href="#i-circle-alert"/></svg>';
+  const EMAIL_RE = /^[^\s@]+@[^\s@.]+(\.[^\s@.]+)*\.[^\s@.]{2,}$/;
+  const PHONE_RE = /^[+()\d\s./-]+$/;
+  const clean = function (v) { return String(v || '').replace(/\s+/g, ' ').trim(); };
+
+  const rules = {
+    nome: function () { return clean(form.elements.nome.value).length >= 2 ? '' : 'Scrivi nome e cognome.'; },
+    email: function () {
+      const v = String(form.elements.email.value || '').trim();
+      if (!v) return 'Scrivi la tua email: il modello arriva lì.';
+      return EMAIL_RE.test(v) ? '' : 'Controlla l’email: sembra incompleta (es. nome@studio.it).';
+    },
+    studio: function () { return clean(form.elements.studio.value).length >= 2 ? '' : 'Scrivi il nome del tuo studio o della tua azienda.'; },
+    ruolo: function () { return ruolo.value ? '' : 'Scegli il tuo ruolo.'; },
+    clienti: function () { return form.querySelector('input[name="clienti"]:checked') ? '' : 'Scegli quanti clienti segui.'; },
+    telefono: function () {
+      const v = clean(form.elements.telefono.value);
+      if (!v) return '';
+      const digits = v.replace(/\D/g, '').length;
+      return PHONE_RE.test(v) && digits >= 6 && digits <= 15 ? '' : 'Controlla il numero: solo cifre, spazi e +, almeno 6 cifre.';
+    },
+    privacy: function () { return form.elements.privacy.checked ? '' : 'Serve il consenso per inviarti il modello.'; }
+  };
+  const targets = {
+    nome: [form.elements.nome], email: [form.elements.email], studio: [form.elements.studio], ruolo: [ruolo],
+    clienti: Array.prototype.slice.call(form.querySelectorAll('input[name="clienti"]')),
+    telefono: [form.elements.telefono], privacy: [form.elements.privacy]
+  };
+  const errIds = { nome: 'e-nome', email: 'e-email', studio: 'e-studio', ruolo: 'e-ruolo', clienti: 'e-clienti', telefono: 'e-tel', privacy: 'e-privacy' };
+  const order = ['nome', 'email', 'studio', 'ruolo', 'clienti', 'telefono', 'privacy'];
+  const touched = {};
+  let attempted = false;
+  let submitting = false;
+
+  function setError(key, msg) {
+    const el = document.getElementById(errIds[key]);
+    if (msg) { el.innerHTML = ERR_ICON; el.appendChild(document.createTextNode(msg)); el.hidden = false; }
+    else { el.textContent = ''; el.hidden = true; }
+    targets[key].forEach(function (t) {
+      if (msg) t.setAttribute('aria-invalid', 'true'); else t.removeAttribute('aria-invalid');
+      if (key === 'clienti') t.setAttribute('aria-describedby', 'e-clienti');
+    });
+    if (key === 'clienti') document.getElementById('g-clienti').classList.toggle('is-invalid', !!msg);
+  }
+  function check(key) { const msg = rules[key](); setError(key, msg); return msg; }
+
+  ruolo.addEventListener('change', function () { ruolo.classList.toggle('is-placeholder', !ruolo.value); });
+
+  order.forEach(function (key) {
+    targets[key].forEach(function (t) {
+      const isText = t.tagName === 'INPUT' && (t.type === 'text' || t.type === 'email' || t.type === 'tel');
+      t.addEventListener(isText ? 'input' : 'change', function () {
+        touched[key] = true;
+        /* durante la digitazione si toglie l'errore appena il campo è a posto, senza aggiungerne di nuovi */
+        if (isText) { if (t.getAttribute('aria-invalid') === 'true' && !rules[key]()) setError(key, ''); }
+        else if (attempted || t.getAttribute('aria-invalid') === 'true') check(key);
+      });
+      if (isText) t.addEventListener('blur', function () {
+        if (touched[key] || attempted) {
+          if (key === 'email') t.value = t.value.trim();
+          check(key);
+        }
+      });
+    });
+  });
+
+  function announce(text) {
+    statusEl.textContent = '';
+    setTimeout(function () { statusEl.textContent = text; }, 60);
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (submitting) return; /* protezione dal doppio invio */
+    attempted = true;
+    const bad = order.filter(function (k) { return !!check(k); });
+    if (bad.length) {
+      announce(bad.length === 1 ? 'C’è un campo da correggere.' : 'Ci sono ' + bad.length + ' campi da correggere.');
+      targets[bad[0]][0].focus();
+      return;
+    }
+    submitting = true;
+    submitBtn.disabled = true;
+    submitBtn.classList.add('is-loading');
+    submitBtn.querySelector('.btn-label').textContent = 'Invio in corso…';
+    form.setAttribute('aria-busy', 'true');
+    const fascia = form.querySelector('input[name="clienti"]:checked').value;
+    const eventId = uuid();
+    form.elements.event_id.value = eventId;
+    /* INVIO SIMULATO: nessuna richiesta di rete, nessun dato salvato. In produzione qui va la chiamata al CRM. */
+    setTimeout(function () { showThanks(fascia, eventId); }, 320);
+  });
+
+  function showThanks(fascia, eventId) {
+    const panel = document.getElementById(fascia === 'meno_di_30' ? 'thanks-out' : 'thanks-in');
+    document.querySelector('.form-state').hidden = true;
+    panel.hidden = false;
+    panel.classList.add('is-entering');
+    state.done = true; updateSticky();
+    const h = panel.querySelector('h2');
+    h.focus({ preventScroll: true });
+    panel.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+    trackLead(fascia, eventId);
+  }
+
+  /* ---------- "Prenota la call": segnaposto del calendario ---------- */
+  document.querySelectorAll('[data-panel]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      const panel = document.getElementById(a.getAttribute('aria-controls'));
+      const open = a.getAttribute('aria-expanded') === 'true';
+      a.setAttribute('aria-expanded', String(!open));
+      panel.hidden = open;
+    });
+  });
+})();
+</script>
+</body>
+</html>
