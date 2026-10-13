@@ -403,7 +403,12 @@ fieldset.field legend{padding:0;margin-bottom:.4375rem}
 @media print{
   .sticky-cta{display:none!important}
   .reveal{opacity:1!important;transform:none!important}
-  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;animation:none!important;transition:none!important}
+  /* ombre sfumate tolte in stampa: alcuni lettori PDF (Anteprima) le mostrano come riquadri grigi */
+  :root{--shadow-card:0 0 0 0 transparent}
+  .dash{box-shadow:inset 0 0 0 1px rgb(255 255 255 / .08)}
+  .btn-primary,.alert-ic,.sticky-cta{box-shadow:none}
+  .live-dot::after{display:none}
 }
 </style>
 </head>
